@@ -3,77 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
         }
         .container {
             width: 80%;
             margin: auto;
+            overflow: hidden;
         }
-        h1, h2, h3 {
-            border-bottom: solid ;
-            padding-bottom: 10px;
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #007bff 3px solid;
         }
-        .section {
-            margin-bottom: 20px;
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
         }
-        .styled-image {
-             width: 300px;            
-             height: 200px;          
-             border-radius: 20px;     
-             border: 3px solid black; 
-             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        .name {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info span {
+            margin-right: 10px;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .section-title {
+            background: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        .experience, .education {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .experience h3, .education h3 {
+            margin: 0;
+        }
+        .date {
+            color: #777;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1 align="center">KOTHA HARIKA</h1>
-            <p align="right">Email: harika.kotha@sasi.ac.in</p>
-            <p align="right">Phone: +91 7032011379</p>
-            <div class="img">
-            <img src="https://github.com/harika-7886000/harika-7886000.github.io/blob/main/myimage.jpg?raw=true" align="right" width="70"height="50"border-radius: 50%/>
+            <div class="center">KOTHA HARIKA</div>
+            <div class="contact-info">
+                <span>Email: harika.kotha@sasi.ac.in</span>
+                <span>Phone: +917032011379</span>
+                <span>Location: eluru</span>
             </div>
         </header>
-        <section class="section">
-            <div>
-            <h2>Summary</h2>
-          <p>
-            I am a third-year B.Tech student specializing in Electronics and Communication Engineering.<br>
-            Passionate about technology, innovation, and problem-solving.<br>
-            Actively looking for opportunities in software development and engineering
-          </p>
-        </div>
-      </section>
-        <section class="section">
-        <div >
-          <h2>Education</h2>
-          <p>
-            <strong>Bachelor of Technology (B.Tech) in Electronics and Communication Engineering</strong>
-            <br>SASI INSTITUTE OF TECHNOLOGY AND ENGINEERING,TADEPALLIGUDEM | 2025 - Present
-            <br>Current Year: 3rd Year
-            <br>CGPA: 8.4
-            <br><strong>Intermediate in Mathematics Physics and Chemistry (MPC)</strong>
-            <br>SRI CHAITHANYA JUNIOUR COLLAGE,ELURU | 2020 - 2022
-            <br>Percentage: 95%
-            <br><strong>10th Class</strong>
-            <br>School Name | 2020
-            <br>Percentage: 99%
-          </p>
-        </div>
-      </section>
-        <section class="section">
-        <div>
-          <h2>Skills</h2>
-          <p>
-            I have strong proficiency in programming languages including C, Python.
-            <br>In web development, I am experienced with HTML, CSS, JavaScript,and I am a beginner in React.
-          </p>
-        </div>
-      </section>
+        <section>
+            <div class="section-title">Summary</div>
+            <div class="experience">
+                <h3>Job Title</h3>
+                <div class="date">Company Name | Jan 2020 - Present</div>
+                <p>Describe your responsibilities and achievements in this role.</p>
+            </div>
+            <div class="experience">
+                <h3>Job Title</h3>
+                <div class="date">Company Name | Jan 2018 - Dec 2019</div>
+                <p>Describe your responsibilities and achievements in this role.</p>
+            </div>
+        </section>
+        <section>
+            <div class="section-title">Education</div>
+            <div class="education">
+                <h3>Degree Title</h3>
+                <div class="date">Institution Name | Graduated Year</div>
+                <p>Describe your coursework or notable achievements.</p>
+            </div>
+        </section>
+        <section>
+            <div class="section-title">Skills</div>
+            <ul>
+                <li>Skill One</li>
+                <li>Skill Two</li>
+                <li>Skill Three</li>
+            </ul>
+        </section>
     </div>
 </body>
 </html>
