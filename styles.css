@@ -1,0 +1,251 @@
+/* body */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #fff;
+    scroll-behavior: smooth;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #0725ed;
+    text-shadow: 0 0 8px #2f50d5;
+}
+.h4 {        
+      overflow: hidden;
+      border-right: 0.15em solid rgb(62, 84, 198); /* Cursor */
+      white-space: nowrap;
+      font-size: 2em;
+      animation: typing 2s steps(10, end), blink-caret 0.75s step-end 4;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      0%, 100% { border-color: transparent }
+      50% { border-color: orange }
+
+}
+.h3{
+  font-weight: bold;
+  color: orange;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heading{
+  font-weight: bold;
+  color: rgb(32, 8, 168);
+  text-shadow: #fff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+/* Navigation */
+nav  {
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    gap: 2rem;
+
+}
+
+nav  li a {
+    text-decoration: none;
+    color: #00f0ff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav  li a:hover {
+    color: #ff6ec7;
+    text-shadow: 0 0 8px #ff6ec7;
+}
+
+.navbar{
+    padding-top: 60px;
+    padding: 80px 30px;
+    border-bottom: 1px solid #070707;
+
+}
+
+/* Glass effect sections */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Floating animation */
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Hover effect */
+.glass:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Profile image and textarea */
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+}
+.container1{
+    flex: 1;
+    padding-right: 20px;
+    font-family: Arial, sans-serif;
+
+}
+.container2{
+    max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+
+}
+.profile img {
+    width: 150px;
+    align-items:center;
+    gap: 1rem;
+    border-radius: 50%;
+    border: 2px solid #00f0ff;
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+textarea#aboutText {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: #fff;
+    resize: vertical;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*paragraph font*/
+.p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Education */
+.edu-item {
+    margin-bottom: 1.5rem;
+}
+
+/* Projects */
+.image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    text-align: center;
+  }
+
+.project {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project a {
+    text-decoration: none;
+    color: #00f0ff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.project a:hover {
+    color: #ff6ec7;
+    text-shadow: 0 0 8px #ff6ec7;
+}
+
+/* Contact */
+#contact p {
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    .glass {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .project img {
+        max-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.container3{
+    flex: 1;
+    padding-right: 20px;
+    font-family: Arial, sans-serif;
+
+}
+.container4{
+    max-width: 400px;
+    height:20%;
+
+}
